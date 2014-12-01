@@ -20,10 +20,11 @@ public class ShortestPath extends GreedyGraph {
 		System.out.println(this);
 		this.greedy(beg);
 		
-		while(v != -1) {
-			s = v + " " + s;
+		while(v != beg) {
+			s = v + "->" + s;
 			v = this.getVertex(v).getParent();
 		}
+		s = v + "->" + s;
 		
 		System.out.println(s);
 
