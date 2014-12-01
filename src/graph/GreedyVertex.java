@@ -19,7 +19,7 @@ public class GreedyVertex extends Vertex implements Comparable<GreedyVertex>{
 	public GreedyVertex(int index, double cost) {
 		super(index);
 		fringe=false;
-		parent=0;
+		parent=-1;
 		this.cost=cost;
 	}
 
