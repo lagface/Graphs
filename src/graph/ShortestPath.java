@@ -14,8 +14,16 @@ public class ShortestPath extends GreedyGraph {
 	}
 	
 	public void shortpath(int beg, int dest){
+		String s = "";
+		int v = dest;
+		
 		System.out.println(this);
 		this.greedy(beg);
+		
+		while(v != -1) {
+			s = v + " " + s;
+			v = this.getVertex(v).getParent();
+		}
 		
 		System.out.println(this.getVertex(dest).getCost());
 		
