@@ -27,7 +27,7 @@ public class Vertex {
 		this.index=index;
 		marked=false;
 		degree=0;
-		parent=0;
+		parent=-1;
 		preNumber=0;
 		postNumber=0;
 		neighbors=null;
