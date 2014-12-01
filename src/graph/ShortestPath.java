@@ -33,9 +33,14 @@ public class ShortestPath extends GreedyGraph {
 		
 	}	
 	public static void main(String[] args) throws IOException {
-		ShortestPath s = new ShortestPath(args[0]);
+		ShortestPath s;
 		
 		Scanner read = new Scanner(System.in);
+		
+		System.out.println("Enter graph file: ");
+		String graphName = read.nextLine();
+		s = new ShortestPath(graphName);
+		
 		System.out.println("Enter source vertex: ");
 		int start = read.nextInt();
 		System.out.println("Enter destination vertex: ");
