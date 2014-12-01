@@ -17,6 +17,7 @@ public class ShortestPath extends GreedyGraph {
 		System.out.println(this);
 		this.greedy(beg);
 		
+		System.out.println(this.getVertex(dest).getCost());
 		
 	}	
 	public static void main(String[] args) throws IOException {
