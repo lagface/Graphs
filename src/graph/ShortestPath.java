@@ -25,6 +25,8 @@ public class ShortestPath extends GreedyGraph {
 			v = this.getVertex(v).getParent();
 		}
 		
+		System.out.println(s);
+
 		System.out.println(this.getVertex(dest).getCost());
 		
 	}	
